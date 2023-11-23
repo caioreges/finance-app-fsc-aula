@@ -52,9 +52,7 @@ export class CreateUserController {
             // retorna 'erro de servidor' em caso de falha de validação das outras camadas
         } catch (error) {
             console.error(error)
-            return serverError({
-                message: 'Internal server error',
-            })
+            return serverError()
         }
     }
 }
